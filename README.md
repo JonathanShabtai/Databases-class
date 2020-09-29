@@ -1,7 +1,7 @@
 # Final project
 ## Jonathan Shabtai - Roller Coaster Database :roller_coaster:
 
-*You will need to tunnel into the PostgreSQL database (doesn't exist anymore), to run final.py and look at the database under http://localhost:53001 succesfully. Since my class is over, the database is not hosted any more. However, all of my code from the project is available here*
+*You will need to tunnel into the PostgreSQL database on UChicago's campus, to run final.py and look at the database under http://localhost:53001 succesfully. Since my class is over, the database is not hosted any longer (doesn't exist anymore). However, all of my code from the project is available here*
 
 Through my web app, you can view visitors (RelationX) - edit information, delete, and view/add visited roller coasters (RelationY).
 
