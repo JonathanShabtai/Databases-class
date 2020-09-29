@@ -1,0 +1,22 @@
+Amusement Park Database
+For my final project I will build a comprehensive amusement park database.
+
+The database will contain all major amusement parks (amusement_park entity set) in the US.
+It will also contain the roller_coasters (roller_coaster entity set) and flat_rides (flat_ride entity set) within them.
+In addition, the database will include food_stall, manufacturer, and visitor entity sets.
+The main objective of the database is to allow users to gain useful information in the domain of amusements parks, and derive insights into parks, coasters, food, mafucaturers, and visitors in the parks. 
+
+Information for each roller coaster includes: name, length, height, drop, speed, inversions, duration, type, year opened.
+These will be the attributes of the entity.
+Similarly, amusement parks stores: name, location_state, size (in ft squared), year_opened, year_closed.
+For manufacturers, we will have Manufacturer: name, country, year_opened, year_closed.
+For food stalls, we will have food_stall: name, type.
+The end user will be able to run queries to look for specific coasters and gain information about coasters of their interest, while finding relations between each entity to the other, and seeing trends.
+The user could find which coasters are appropriate for children, which flat rides are the most ridden ones, which food stalls make the most money, what are the favorite parks, read reviews about them, and more.
+Full map of the relations are displayed in the E-R Diagrem and summerized in the schema.txt file, but some examples are:
+Roller Coaster located in Amusement Park (with total participation of coasters in parks, and many-to-one).
+Visitor rode a Roller Coaster, giving the count and rating for the coaster (many-to-many).
+Visitor spent a sum of money at a specific food stall.
+
+To generate “seed” data manually, I will use the website: https://rcdb.com/.
+Generating large amounts of random data should be relatively simple in this domain.

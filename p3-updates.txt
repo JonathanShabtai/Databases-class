@@ -1,0 +1,8 @@
+Note that I put my information inside p3.sh to run.
+
+Fixed a typo that I had under the schema.txt under visit_flat.
+Took out age attribute from Visitor, left just DOB.
+Used data_with_faker.py for a several tables (Mostly inputed real information manually).
+
+Note that the python script may return tuples that are duplicated by chance, in those cases I manually changed the primary key values.
+I will fix that when we need to generate a very large dataset to ensure there are not duplicates.

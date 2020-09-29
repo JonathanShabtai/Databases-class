@@ -1,0 +1,83 @@
+amusement_park(
+park_id int pkey,
+name string not null,
+location_state string,
+size_ft_sqaured int,
+year_opened date not null,
+year_closed date
+)
+
+roller_coaster(
+coaster_id int pkey,
+name string not null,
+length float,
+height float,
+drop float,
+speed float,
+inversions int,
+duration int,
+type string,
+height_restriction float not null,
+year_opened date not null,
+year_closed date,
+park_id fkey(amusement_park),
+manuf_id fkey(manufacturer)
+)
+
+visitor(
+visitor_id int pkey,
+name string not null,
+height int not null,
+age int (derived from date_of_birth),
+date_of_birth date
+)
+
+food_stall(
+stall_id int pkey,
+name string not null,
+type string,
+park_id fkey(amusement_park)
+)
+
+manufacturer(
+manuf_id int pkey,
+country string,
+owner string,
+year_opened date,
+year_closed date
+)
+
+flat_ride(
+ride_id int pkey,
+name string not null,
+type string,
+capacity int,
+thrill_level int [constraint: between 1-5],
+park_id fkey(amusement_park)
+)
+
+visit_coaster(
+visitor_id fkey(visitor) pkey,
+coaster_id fkey(roller_coaster) pkey,
+coaster_count int,
+coaster_rate int [constraint: between 1-5]
+)
+
+dine (
+visitor_id fkey(visitor) pkey,
+stall_id fkey(food_stall) pkey,
+money_spent float
+)
+
+visit_flat(
+visitor_id fkey(visitor) pkey,
+stall_id fkey(food_stall) pkey,
+flat_count int,
+flat_rate int [constraint: between 1-5]
+)
+
+visit_park(
+visitor_id fkey(visitor) pkey,
+park_id fkey(amusement_park) pkey,
+review string [constraint: 500 characters max]
+)

@@ -1,0 +1,23 @@
+Final project description and ideas (Jonathan Shabtai 4/18/20)
+
+I am interested in building both ideas below, so any feedback for what makes more sense in the scope of the class would be appreciated. For both there are many relations that can be drawn between the entities, so that the total number of entity sets and relationships will be between 10 and 20.
+
+Idea 1: A roller coasters database.
+The idea is to build a database that contains all major amusement parks in the US and map the roller coasters within it. There will be visitors that could keep track of the parks they visited and the coasters they rode.
+
+Some of the entity sets that can be utilized and their attributes are:
+Roller Coaster: name, length, height, drop, speed, inversions, duration, type, year opened
+Amusement Park: name, location, size, year opened, visitors per year
+Manufacturer: name, location, owner, year opened
+Visitor: name, age
+Examples of relations: Roller Coaster located in Amusement Park, Visitor attended a park, Visitor rode a Roller Coaster, Manufacturer built Roller Coaster.
+To generate “seed” data manually, I will use the website: https://rcdb.com/, and generating large amounts of random data should be relatively simple in this domain. 
+
+Idea 2:
+Hearthstone collectible card game database.
+
+Hearthstone is an online card game where you choose a hero out of 10 heros and build a deck consisting of 30 cards.
+Each hero has a set of cards that only they can use, while there is a pool of neutral cards any hero can use.
+Entity sets could be: Hero, card, deck, and player. There are many options for attributes for each of these.
+Relations would be: which hero has which cards, cards that a player owns (collection), and which hero a player picks to play.
+To generate “seed” data, I can use the current set of cards, although generating random sets of cards can be a bit more tricky in this idea.
